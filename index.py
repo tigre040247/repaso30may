@@ -20,6 +20,8 @@ def hello():
 @app.route('/about/')
 # Llamar a about
 def about():
+
+
         return '<h3>PRUEBA 2</h3>'
 
 # Definicion de rutas ESCRIBIMOS HASTA CAPITALIZE Y LO QUE VA ENTRE LOS SIGNOS DE MAYOR Y MENOR SE EMPRIME 
@@ -63,7 +65,6 @@ def greet_users(user_id):
     except IndexError:
         abort(404)
 
-
 #ruta principal
 #ruta - Página principal, para llamar a un archivo de html
 @app.route('/indexrepaso')
@@ -76,10 +77,6 @@ def principal():
 #Llamar a index.html en la ruta principal
 def menuNaturaleza():
     return render_template('inicio.html')
-
-
-
-
 
 #main del programa
 if __name__ == '__main__':
